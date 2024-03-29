@@ -3,7 +3,7 @@
   "output": "DP-1",
   "modules-left": ["sway/workspaces", "sway/mode", "sway/scratchpad", "custom/media"],
   "modules-center": ["sway/window"],
-  "modules-right": ["custom/music", "tray", "idle_inhibitor", "pulseaudio", "clock"],
+  "modules-right": ["custom/music", "tray", "custom/ups","idle_inhibitor", "pulseaudio", "clock"],
   "sway/mode": {
     "format": "<span style=\"italic\">{}</span>"
   },
@@ -20,7 +20,7 @@
       "activated": "",
       "deactivated": ""
     }
-  },
+  }, 
   "tray": {
     "spacing": 10
   },
@@ -42,6 +42,10 @@
       "default": ["", "", ""]
     },
     "on-click": "pavucontrol"
+  },
+  "custom/ups": {
+     "exec": "$HOME/.config/waybar/scripts/ups_status.sh",
+     "interval": 60
   },
   "custom/music": {
     "interval": 5,
