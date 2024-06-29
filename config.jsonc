@@ -19,7 +19,8 @@
     "format-icons": {
       "activated": "",
       "deactivated": ""
-    }
+    },
+    "start-activated": true
   }, 
   "tray": {
     "spacing": 10
