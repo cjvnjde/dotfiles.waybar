@@ -24,7 +24,5 @@ else
     ICON="${icons[index]} "
 fi
 
-selected_icon=$(select_icon "$UPS_CHARGE")
-
 echo "$ICON $UPS_CHARGE%"
 

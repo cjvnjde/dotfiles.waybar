@@ -1,13 +1,13 @@
 [{
   "position": "top", // Waybar position (top|bottom|left|right)
   "output": "DP-1",
-  "modules-left": ["sway/workspaces", "sway/mode", "sway/scratchpad", "custom/media"],
-  "modules-center": ["sway/window"],
-  "modules-right": ["custom/music", "tray", "custom/ups","idle_inhibitor", "pulseaudio", "clock"],
-  "sway/mode": {
+  "modules-left": ["hyprland/workspaces", "hyprland/mode", "hyprland/scratchpad", "custom/media"],
+  "modules-center": ["hyprland/window"],
+  "modules-right": ["custom/music", "tray", "custom/ups","idle_inhibitor", "wireplumber", "clock"],
+  "hyprland/mode": {
     "format": "<span style=\"italic\">{}</span>"
   },
-  "sway/scratchpad": {
+  "hyprland/scratchpad": {
     "format": "{icon} {count}",
     "show-empty": false,
     "format-icons": ["", ""],
@@ -29,20 +29,9 @@
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
     "format-alt": "{:%Y-%m-%d}"
   },
-  "pulseaudio": {
+  "wireplember": {
     "format": "{icon} {volume}% {format_source}",
-    "format-bluetooth": " {icon} {volume}% {format_source}",
-    "format-bluetooth-muted": "  {icon} {format_source}",
     "format-muted": "  {format_source}",
-    "format-source": " {volume}%",
-    "format-source-muted": "",
-    "format-icons": {
-      "headphone": "",
-      "hands-free": "",
-      "headset": "",
-      "default": ["", "", ""]
-    },
-    "on-click": "pavucontrol"
   },
   "custom/ups": {
      "exec": "$HOME/.config/waybar/scripts/ups_status.sh",
@@ -54,8 +43,8 @@
   }
 }, {
   "output": "HDMI-A-1",
-  "modules-left": ["sway/workspaces", "sway/mode", "sway/scratchpad", "custom/media"],
-  "modules-center": ["sway/window"],
+  "modules-left": ["hyprland/workspaces", "hyprland/mode", "hyprland/scratchpad", "custom/media"],
+  "modules-center": ["hyprland/window"],
   "modules-right": ["clock"],
   "clock": {
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
