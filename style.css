@@ -73,7 +73,8 @@ button:hover {
   padding: 0rem 0.6rem;
 }
 
-#window {
+#window,
+#custom-music {
   background-color: transparent;
 }
 

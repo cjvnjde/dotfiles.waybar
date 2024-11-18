@@ -37,7 +37,7 @@
     },
     "custom/music": {
       "interval": 5,
-      "exec": "playerctl metadata --format '{{status}}|{{artist}}|{{title}}'",
+      "exec": "playerctl metadata --format '{{status}}|{{artist}}|{{title}}' | sed 's/&/and/g'",
     },
   },
   {
