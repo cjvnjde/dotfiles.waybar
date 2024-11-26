@@ -61,8 +61,8 @@ button:hover {
 #workspaces button.urgent {
   /* red */
   background-color: #f38ba8;
-  /* lavender */
-  color: #b4befe;
+  /* base */
+  color: #1e1e2e;
 }
 
 .module {
