@@ -6,6 +6,7 @@
     "modules-center": ["hyprland/window"],
     "modules-right": [
       "custom/music",
+      "idle_inhibitor",
       "custom/keyboardlayout",
       "tray",
       "custom/ups",
@@ -38,6 +39,14 @@
     "custom/music": {
       "interval": 5,
       "exec": "playerctl metadata --format '{{status}}|{{artist}}|{{title}}' | sed 's/&/and/g'",
+    },
+    "idle_inhibitor": {
+      "format": "{icon}",
+      "format-icons": {
+        "activated": "",
+        "deactivated": "",
+      },
+      "tooltip": false,
     },
   },
   {

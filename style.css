@@ -78,6 +78,13 @@ button:hover {
   background-color: transparent;
 }
 
+#idle_inhibitor {
+  background-color: transparent;
+  /* mauve */
+  color: #f5c2e7;
+  padding: 0rem 1rem 0rem 0.6rem;
+}
+
 #clock {
   /* blue */
   color: #89b4fa;
