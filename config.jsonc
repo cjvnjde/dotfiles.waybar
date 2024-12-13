@@ -2,8 +2,8 @@
   {
     "position": "top",
     "output": "DP-1",
-    "modules-left": ["hyprland/workspaces", "custom/media"],
-    "modules-center": ["hyprland/window"],
+    "modules-left": ["sway/workspaces", "custom/media"],
+    "modules-center": ["sway/window"],
     "modules-right": [
       "custom/music",
       "idle_inhibitor",
@@ -13,7 +13,7 @@
       "wireplumber",
       "clock",
     ],
-    "hyprland/mode": {
+    "sway/mode": {
       "format": "<span style=\"italic\">{}</span>",
     },
     "tray": {
@@ -52,9 +52,9 @@
   {
     "output": "HDMI-A-1",
     "modules-left": [
-      "hyprland/workspaces",
-      "hyprland/mode",
-      "hyprland/scratchpad",
+      "sway/workspaces",
+      "sway/mode",
+      "sway/scratchpad",
       "custom/media",
     ],
     "modules-center": ["hyprland/window"],

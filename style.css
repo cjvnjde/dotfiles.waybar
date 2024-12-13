@@ -26,6 +26,7 @@ button:hover {
 #workspaces {
   border-radius: 1rem;
   margin: 2px;
+  padding: 0 2px;
   /* surface0 */
   background-color: #313244;
 }
