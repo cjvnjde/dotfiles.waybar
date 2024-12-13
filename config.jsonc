@@ -2,7 +2,7 @@
   {
     "position": "top",
     "output": "DP-1",
-    "modules-left": ["sway/workspaces", "custom/media"],
+    "modules-left": ["sway/workspaces", "sway/mode", "sway/scratchpad"],
     "modules-center": ["sway/window"],
     "modules-right": [
       "custom/music",
@@ -51,12 +51,7 @@
   },
   {
     "output": "HDMI-A-1",
-    "modules-left": [
-      "sway/workspaces",
-      "sway/mode",
-      "sway/scratchpad",
-      "custom/media",
-    ],
+    "modules-left": ["sway/workspaces", "sway/mode", "sway/scratchpad"],
     "modules-center": ["hyprland/window"],
     "modules-right": ["clock"],
     "clock": {
