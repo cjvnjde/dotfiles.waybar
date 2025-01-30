@@ -2,8 +2,8 @@
   {
     "position": "top",
     "output": "DP-1",
-    "modules-left": ["sway/workspaces", "sway/mode", "sway/scratchpad"],
-    "modules-center": ["sway/window"],
+    "modules-left": ["niri/workspaces"],
+    "modules-center": ["niri/window"],
     "modules-right": [
       "custom/music",
       "idle_inhibitor",
@@ -47,16 +47,6 @@
         "deactivated": "",
       },
       "tooltip": false,
-    },
-  },
-  {
-    "output": "HDMI-A-1",
-    "modules-left": ["sway/workspaces", "sway/mode", "sway/scratchpad"],
-    "modules-center": ["hyprland/window"],
-    "modules-right": ["clock"],
-    "clock": {
-      "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-      "format-alt": "{:%Y-%m-%d}",
     },
   },
 ]
