@@ -6,16 +6,12 @@
     "modules-center": ["niri/window"],
     "modules-right": [
       "custom/music",
-      "idle_inhibitor",
       "custom/keyboardlayout",
       "tray",
       "custom/ups",
       "wireplumber",
       "clock",
     ],
-    "sway/mode": {
-      "format": "<span style=\"italic\">{}</span>",
-    },
     "tray": {
       "spacing": 10,
     },
@@ -39,14 +35,6 @@
     "custom/music": {
       "interval": 5,
       "exec": "playerctl metadata --format '{{status}}|{{artist}}|{{title}}' | sed 's/&/and/g'",
-    },
-    "idle_inhibitor": {
-      "format": "{icon}",
-      "format-icons": {
-        "activated": "",
-        "deactivated": "",
-      },
-      "tooltip": false,
     },
   },
 ]
