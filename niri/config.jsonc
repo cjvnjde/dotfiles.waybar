@@ -30,7 +30,7 @@
     },
     "custom/keyboardlayout": {
       "interval": 1,
-      "exec": "$HOME/.config/waybar/scripts/get_layout.sh",
+      "exec": "$HOME/.config/waybar/niri/scripts/get_layout.sh",
     },
     "custom/music": {
       "interval": 5,
