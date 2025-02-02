@@ -2,20 +2,16 @@
   {
     "position": "top",
     "output": "DP-1",
-    "modules-left": ["sway/workspaces", "sway/mode", "sway/scratchpad"],
-    "modules-center": ["sway/window"],
+    "modules-left": ["niri/workspaces"],
+    "modules-center": ["niri/window"],
     "modules-right": [
       "custom/music",
-      "idle_inhibitor",
       "custom/keyboardlayout",
       "tray",
       "custom/ups",
       "wireplumber",
       "clock",
     ],
-    "sway/mode": {
-      "format": "<span style=\"italic\">{}</span>",
-    },
     "tray": {
       "spacing": 10,
     },
@@ -34,29 +30,11 @@
     },
     "custom/keyboardlayout": {
       "interval": 1,
-      "exec": "$HOME/.config/waybar/scripts/get_layout.sh",
+      "exec": "$HOME/.config/waybar/niri/scripts/get_layout.sh",
     },
     "custom/music": {
       "interval": 5,
       "exec": "playerctl metadata --format '{{status}}|{{artist}}|{{title}}' | sed 's/&/and/g'",
-    },
-    "idle_inhibitor": {
-      "format": "{icon}",
-      "format-icons": {
-        "activated": "",
-        "deactivated": "",
-      },
-      "tooltip": false,
-    },
-  },
-  {
-    "output": "HDMI-A-1",
-    "modules-left": ["sway/workspaces", "sway/mode", "sway/scratchpad"],
-    "modules-center": ["hyprland/window"],
-    "modules-right": ["clock"],
-    "clock": {
-      "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-      "format-alt": "{:%Y-%m-%d}",
     },
   },
 ]
