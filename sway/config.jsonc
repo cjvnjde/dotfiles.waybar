@@ -10,9 +10,14 @@
       "custom/keyboardlayout",
       "tray",
       "custom/ups",
-      "wireplumber",
+      "pulseaudio",
       "clock",
     ],
+    "pulseaudio": {
+      "format": "{volume}% {format_source}",
+      "format-source": "🎙️🎶",
+      "format-source-muted": "🎙️🚫",
+    },
     "sway/mode": {
       "format": "<span style=\"italic\">{}</span>",
     },
