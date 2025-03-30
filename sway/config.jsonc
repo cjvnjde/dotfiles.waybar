@@ -54,4 +54,20 @@
       "tooltip": false,
     },
   },
+  {
+    "output": "HDMI-A-1",
+    "modules-left": [
+      "sway/workspaces",
+      "sway/mode",
+      "sway/scratchpad",
+      "custom/media",
+    ],
+    "modules-center": ["sway/window"],
+    "modules-right": ["clock"],
+    "clock": {
+      "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+      "format": "{:%I:%M %p}",
+      "format-alt": "{:%Y-%m-%d %I:%M:%S %p}",
+    },
+  },
 ]
