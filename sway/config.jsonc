@@ -38,7 +38,7 @@
       "interval": 10,
     },
     "custom/keyboardlayout": {
-      "interval": 1,
+      "interval": 0.2,
       "exec": "$HOME/.config/waybar/sway/scripts/get_layout.sh",
     },
     "custom/music": {
