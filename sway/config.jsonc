@@ -7,6 +7,7 @@
     "modules-right": [
       "custom/music",
       "idle_inhibitor",
+      "custom/privacy",
       "custom/keyboardlayout",
       "tray",
       "custom/ups",
@@ -53,6 +54,13 @@
         "deactivated": "",
       },
       "tooltip": false,
+    },
+    "custom/privacy": {
+      "exec": "$HOME/.config/waybar/sway/scripts/privacy_monitor.sh",
+      "return-type": "json",
+      "interval": 2,
+      "format": "{}",
+      "tooltip": true,
     },
   },
   {
