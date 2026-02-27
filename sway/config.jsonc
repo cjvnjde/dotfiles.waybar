@@ -51,7 +51,7 @@
       "tooltip": false,
     },
     "custom/privacy": {
-      "exec": "$HOME/.config/waybar/sway/scripts/privacy_monitor.sh",
+      "exec": "$HOME/.config/waybar/sway/scripts/privacy_monitor.sh --mic --cam --screen",
       "return-type": "json",
       "interval": 2,
       "format": "{}",
