@@ -84,8 +84,10 @@ import json, sys
 data = json.load(sys.stdin)
 for n in data:
     if n.get('type') == 'PipeWire:Interface:Node':
-        mc = n.get('info', {}).get('props', {}).get('media.class', '')
-        if 'Video/Source' in mc:
+        props = n.get('info', {}).get('props', {})
+        mc = props.get('media.class', '')
+        name = props.get('node.name', '')
+        if 'Video/Source' in mc and 'v4l2' not in name:
             sys.exit(0)
 sys.exit(1)
 " 2>/dev/null; then
